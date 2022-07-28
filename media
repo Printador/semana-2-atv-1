@@ -1,0 +1,17 @@
+nome = str(input('Qual seu nome?: '))
+nota1 = float(input('Primeira nota: '))
+nota2 = float(input('Segunda nota: '))
+faltas = float(input('Quantidade de faltas: '))
+
+media = (nota1 + nota2) / 2
+
+print('Nome: ', nome)
+print('Media: ', media)
+print('Faltas: ', faltas)
+    
+if media<7:
+    print('Reprovado')
+if media>7:
+    print('Aprovado')
+if faltas>3:
+    print('Reprovado por faltas')
