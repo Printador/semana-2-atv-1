@@ -9,9 +9,9 @@ print('Nome: ', nome)
 print('Media: ', media)
 print('Faltas: ', faltas)
     
-if media<7:
-    print('Reprovado')
-if media>7:
-    print('Aprovado')
-if faltas>3:
-    print('Reprovado por faltas')
+if (media<7):
+  print('Reprovado')
+elif (media>7 and faltas>=3):
+  print('Reprovado por faltas')
+elif (media>7):
+  print('Aprovado')
